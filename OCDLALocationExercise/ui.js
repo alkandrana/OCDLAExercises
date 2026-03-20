@@ -1,5 +1,5 @@
 // Javascript DOM manipulation
-import {Location} from './Location.js';
+import {Location} from './location.js';
 // array of Locations corresponding to 10 major U.S. cities
 const cities = [
     new Location(1, "Portland", 45.51929799445891, -122.55059380561721),
