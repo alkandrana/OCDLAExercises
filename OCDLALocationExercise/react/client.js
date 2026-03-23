@@ -1,3 +1,5 @@
+import {cities} from "../data/cities.js";
+
 let renderCount = 0;
 let previousState = null;
 let state = [];
@@ -18,7 +20,9 @@ export function render(root, component) {
 }
 
 function hasStateChanged(state1, state2){
-    return true;
+    const city1 = cities.find(c => c.id == state1);
+    const city2 = cities.find(c => c.id == state2);
+    return JSON.stringify(city1) !== JSON.stringify(city2);
 }
 export function useState(defaultValue){
     let count = counter;
