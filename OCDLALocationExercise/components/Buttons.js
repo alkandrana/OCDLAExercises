@@ -1,6 +1,7 @@
 import Button from "./Button.js";
 export default function Buttons(cities, activeCityId, setActiveCityId) {
     const buttonsDiv = document.createElement("div");
+    buttonsDiv.id = "buttons-container";
     for (let i = 0; i < cities.length; i++) {
         const city = cities[i];
         let isActive = activeCityId == city.id;
