@@ -6,7 +6,7 @@ export default function Buttons(cities, activeCityId, setActiveCityId) {
         const city = cities[i];
         let isActive = activeCityId == city.id;
         // add location buttons to the page
-        const btn = Button(city, isActive);
+        const btn = Button(city.name, city.id, isActive);
 
         // create click history
         // btnHistory.push({btn: city.name, status: "unclicked"});

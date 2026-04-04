@@ -1,16 +1,16 @@
-export default function Button(city, active = false){
-    const cityContainer = document.createElement("div");
-    cityContainer.id = String(city.id);
-    cityContainer.classList.add("col")
+export default function Button(label, id, active = false){
+    const button = document.createElement("div");
+    button.id = String(label);
+    button.classList.add("col")
     // create button element
     const btn = document.createElement("button");
     btn.classList.add("btn", !active ? "btn-primary" : "btn-success");
     // create button label
-    const btnName = document.createTextNode(city.name);
+    const btnName = document.createTextNode(label);
     btn.appendChild(btnName);
-    cityContainer.appendChild(btn);
+    button.appendChild(btn);
     // append button to page
-    return cityContainer;
+    return button;
 }
 
 function updateBtnStatus(city){

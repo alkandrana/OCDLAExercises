@@ -34,4 +34,4 @@ function updateButtons(){
 
 // create button element for given city, and add to the page
 
-
+//
