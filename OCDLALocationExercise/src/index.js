@@ -4,7 +4,7 @@ import App from './components/App.js';
 
 const page = document.querySelector("#main");
 render(page, App);
-let foobar = <App></App>;
+// let foobar = <App></App>;
 
 
 

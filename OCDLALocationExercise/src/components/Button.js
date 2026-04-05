@@ -1,6 +1,6 @@
 export default function Button(label, id, active = false){
     const button = document.createElement("div");
-    button.id = String(label);
+    button.id = String(id);
     button.classList.add("col")
     // create button element
     const btn = document.createElement("button");

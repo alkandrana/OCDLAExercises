@@ -13,12 +13,9 @@
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.24.7"
   },
-  "dependencies": {
-    "react": "file:./dev_modules/@local/jsx"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alkandrana/OCDLAExercises.git"
   },
   "private": true
-},
+}
