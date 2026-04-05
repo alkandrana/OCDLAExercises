@@ -11,9 +11,18 @@
         "runtime": "automatic",
         "targets": {
           "chrome": "120"
-        }
+        },
+        "importSource": "@local/jsx"
       }
     ]
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["../"],
+      "alias": {
+        "@local/jsx/jsx-runtime": "../dev_modules/@local/jsx/jsx-runtime.js"
+      }
+    }]
   ],
   "sourceMaps": true
 }

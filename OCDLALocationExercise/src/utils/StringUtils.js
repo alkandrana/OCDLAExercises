@@ -6,7 +6,6 @@ export default class StringUtils {
     static toId(source){
         let firstElement;
         let parts = source.split(/[, ]/);
-        debugger
         parts = parts.filter(p => !!p);
         parts = parts.map(p => p.trim());
         parts = parts.map(p => p.toLowerCase());
