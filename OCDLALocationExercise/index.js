@@ -12,6 +12,7 @@ for (const c of cities) {
 
 // trigger when some button is changed to active
 // update the status of the currently active button
+/*
 function updateHistory(id){
     // findIndex gets the first element that matches
     // TODO: strictly speaking we should check for duplicates (and, of course, "not found" case)
@@ -24,4 +25,4 @@ function updateHistory(id){
 // TODO: id should come from the just-clicked button tracked by useState()
 document.addEventListener("HistoryChange", () => {
     updateHistory(id);
-})
+})*/

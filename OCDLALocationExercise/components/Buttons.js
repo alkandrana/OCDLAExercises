@@ -16,7 +16,9 @@ export default function Buttons(cities, activeCityId, setActiveCityId) {
             let target = e.currentTarget;
             let id = target.id;
             console.log(id);
+            const historyChanged = new CustomEvent("HistoryChange", {detail: {id: city.id}});
             setActiveCityId(id);
+            document.dispatchEvent(historyChanged);
             // display location details
             // LocationDetails(city);
             // update click history
