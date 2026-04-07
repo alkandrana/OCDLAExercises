@@ -1,5 +1,4 @@
-import {jsx} from "../../../dev_modules/@local/jsx/jsx-runtime.js";
-
+import {jsx} from "@local/jsx/jsx-runtime"
 let renderCount = 0;
 let previousState = null;
 let state = [];
