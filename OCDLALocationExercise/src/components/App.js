@@ -2,7 +2,7 @@ import {cities} from '../data/cities.js'
 import LocationDetails from "./LocationDetails.js";
 import {useState} from "../react/client.js";
 import Buttons from "./Buttons.js";
-import {jsx} from "react/jsx-runtime.js"
+import {jsx} from "@local/jsx/jsx-runtime.js"
 export default function App(){
     const container = document.createElement("div");
     let [activeCityId, setActiveCityId] = useState("ithaca");
