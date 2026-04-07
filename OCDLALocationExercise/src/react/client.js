@@ -1,3 +1,5 @@
+import {jsx} from "../../../dev_modules/@local/jsx/jsx-runtime.js";
+
 let renderCount = 0;
 let previousState = null;
 let state = [];
@@ -46,7 +48,7 @@ export function render(root, component) {
     renderFn = function () {
         // previousState = JSON.stringify(state);
         root.innerHTML = "";
-        root.appendChild(component());
+        root.appendChild(jsx(component, {}));
         if (hasStateChanged(previousState, state))
         {
             // renderFn();
