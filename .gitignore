@@ -1,5 +1,9 @@
 **/node_modules/
 **/dist/
+# IDE files
 **/.idea/
+
+# OS files
 **/.DS_Store
 **/package-lock.json
+
